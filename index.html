@@ -43,9 +43,19 @@
   <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
 
   <div>
-    <form>
-      <!-- TODO: Add a text field and submit button, attach a form handler function -->
+
+    <form onsubmit="eightBall()" name="eightBallForm">
+      <label>What answers does thou seek?
+      <input type="text" name="question"></label>
+      <input type="submit" value="Submit">
     </form>
+
+    <form onsubmit="insertAnswer()" name="answerForm">
+      <label>What more questions?
+      <input type="text" name="answer"></label>
+      <input type="submit" value="Submit">
+    </form>
+
   </div>
 </section>
 <script type="text/javascript" src="scripts.js"></script>
