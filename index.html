@@ -40,7 +40,7 @@
 </header>
 
 <section class="container">
-  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
+  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball" onclick="clicker('Yes')">
 
   <div>
 
@@ -53,6 +53,14 @@
     <form onsubmit="insertAnswer()" name="answerForm">
       <label>What more questions?
       <input type="text" name="answer"></label>
+      <input type="submit" value="Submit">
+    </form>
+
+    <form onsubmit="removeAnswer()" name="removalForm">
+      What answer would you like to remove?
+      <label>Yes<input type="radio" name="remove" value="Yes"></label>
+      <label>No<input type="radio" name="remove" value="No"></label>
+      <label>Maybe<input type="radio" name="remove" value="Maybe"></label>
       <input type="submit" value="Submit">
     </form>
 

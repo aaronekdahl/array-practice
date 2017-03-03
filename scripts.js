@@ -1,5 +1,21 @@
-// Todo: Build an array of strings that could be answers to magic 8 ball type questions.
+function clicker(answerss) {
+  console.log(answerss.indexOf(answerss));
+}
+
+
+
 var answers = ["Yes", "No", "Maybe", "I Don't Know", "Google It"];
+
+function removeAnswer() {
+  var remv = document.removalForm.remove.value;
+  var index = answers.indexOf(remove);
+
+  if(index >= 0) {
+    answers.splice(index, 1);
+  }
+  console.log(fortunes);
+  event.preventDefault;
+}
 
 function insertAnswer() {
   var answer = document.answerForm.answer.value;
